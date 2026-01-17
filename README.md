@@ -1,4 +1,4 @@
-"# Dataapp
+# Dataapp
 
 ## Sales Data CSV Generator
 
@@ -39,4 +39,3 @@ dataapp/
 ├── exports/                  # Output directory
 │   └── sales_data.csv       # Generated CSV file
 └── README.md                # This file
-```" 

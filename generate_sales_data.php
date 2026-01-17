@@ -49,7 +49,7 @@ foreach ($operators as $operator) {
             $numberOfPositions = rand(10, 100);
             $returnsNetValue = round(rand(100, 5000) / 100, 2);
             $margin = round(rand(1000, 20000) / 100, 2);
-            $marginPercentage = round(($margin / $netValue) * 100, 2);
+            $marginPercentage = $netValue > 0 ? round(($margin / $netValue) * 100, 2) : 0;
             $quantity = rand(50, 500);
             
             // Write row to CSV
