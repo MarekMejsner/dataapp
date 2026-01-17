@@ -1,4 +1,4 @@
-"# Dataapp
+# Dataapp
 
 Sales data reporting tool for generating detailed Excel reports.
 
@@ -56,4 +56,4 @@ The script currently uses sample sales data. For production use, replace the `$s
 
 - PHP 8.0 or higher
 - Composer
-- PhpSpreadsheet library (automatically installed via Composer)" 
+- PhpSpreadsheet library (automatically installed via Composer)

@@ -914,6 +914,7 @@ foreach ($salesData as $operator => $periods) {
 }
 
 // Save the file
+// Create the exports directory if it doesn't exist (permissions: 0755 = rwxr-xr-x)
 $outputDir = __DIR__ . '/exports';
 if (!is_dir($outputDir)) {
     mkdir($outputDir, 0755, true);
@@ -923,5 +924,6 @@ $writer = new Xlsx($spreadsheet);
 $outputPath = $outputDir . '/sales_data.xlsx';
 $writer->save($outputPath);
 
+// Output success message with file location and size for verification
 echo "Excel file generated successfully: " . $outputPath . "\n";
 echo "File size: " . filesize($outputPath) . " bytes\n";
