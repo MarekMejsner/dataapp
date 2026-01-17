@@ -10,6 +10,8 @@ use PhpOffice\PhpSpreadsheet\Style\Fill;
 use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 
 // Sample sales data structure
+// NOTE: This is placeholder data for demonstration purposes.
+// In production, replace this with actual data from your database, API, or other data source.
 $salesData = [
     'AR' => [
         'zeszly_rok' => [
@@ -912,8 +914,13 @@ foreach ($salesData as $operator => $periods) {
 }
 
 // Save the file
+$outputDir = __DIR__ . '/exports';
+if (!is_dir($outputDir)) {
+    mkdir($outputDir, 0755, true);
+}
+
 $writer = new Xlsx($spreadsheet);
-$outputPath = __DIR__ . '/exports/sales_data.xlsx';
+$outputPath = $outputDir . '/sales_data.xlsx';
 $writer->save($outputPath);
 
 echo "Excel file generated successfully: " . $outputPath . "\n";

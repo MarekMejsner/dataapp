@@ -48,6 +48,10 @@ Each operator has a dedicated sheet containing:
 - Liczba pozycji (Number of positions)
 - Ilości (Quantities)
 
+## Data Source
+
+The script currently uses sample sales data. For production use, replace the `$salesData` array with your actual data source (database query, API call, etc.).
+
 ## Requirements
 
 - PHP 8.0 or higher
