@@ -1,0 +1,13 @@
+{
+    "name": "marekmejsner/dataapp",
+    "description": "Sales data reporting tool",
+    "type": "project",
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Marek Mejsner"
+        }
+    ]
+}
