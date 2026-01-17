@@ -1,4 +1,4 @@
-"# Dataapp - Excel Sales Report Generator
+# Dataapp - Excel Sales Report Generator
 
 This application generates comprehensive Excel reports for TOMEX sales data across multiple operators and product groups.
 
@@ -103,4 +103,4 @@ Add the period key to the `$periods` array and update the data structure accordi
 ## License
 
 This project is open source and available for use and modification.
-" 
+ 
